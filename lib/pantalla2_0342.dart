@@ -9,16 +9,48 @@ class Pantalla2_0342 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xff0e6b4c),
-        title: const Text("Pantalla 2 Cobos0342"),
+        foregroundColor: Color(0xa300e2ff),
+        title: Text(
+          "Challenge 2 Cobos0342",
+          style: TextStyle(),
+        ),
+        backgroundColor: Color(0xff000725),
       ),
       body: Center(
-        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          ElevatedButton(
-            onPressed: () {}, //Si presiona boton
-            child: const Text("Pantalla"),
-          )
-        ]),
+        child: Column(
+          children: [
+            Container(
+              height: 130,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Color(0xff122535),
+                borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(50),
+                  bottomLeft: Radius.circular(50),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color(0xaa709bbe),
+                    offset: Offset(9, 12),
+                    blurRadius: 9,
+                  ),
+                ],
+              ),
+              alignment: Alignment.center,
+              child: Text(
+                'I AM THE MESIA',
+                style: TextStyle(
+                    fontSize: 38,
+                    color: Color(0xd6008ee0),
+                    fontStyle: FontStyle.italic),
+              ),
+            ),
+            Text(
+              "Encabezado/Mat. 21308051280342",
+              textScaleFactor: 1.5,
+            )
+          ],
+        ),
       ),
     );
   } //fin widgets
